@@ -102,7 +102,7 @@ How you use this document depends on your Apple Developer Program membership and
 如何使用这个文档，取决于你的Apple Developer Program会员和你在其中所处的角色(Team创建者，管理员或者成员)。对于Mac应用来说，你如何使用这个文档还取决于你选择提交你的应用到Mac App Store还是将它发布到Mac App Store之外。
 
 First choose a type of account (individual or company) and a developer program. If needed, create an Apple ID and join a developer program, as described in Managing Accounts. If you enroll in a developer program as an individual, you’re the team agent for a one-person team. If you enroll in a developer program as a company, you’re the team agent and can invite other people to join your team, as described in Inviting Team Members. You specify whether a person is a team admin, who can perform most of the same tasks as a team agent, or a team member who can’t create assets in Member Center. To learn more about team roles, read About Apple Developer Program Team Roles and Privileges.  
-首先选择一个账号类型(个人还是企业)和一个开发者计划。
+首先选择一个账号类型(个人还是企业)和一个开发者计划。如若必要，创建一个Apple ID并且加入一个开发者计划，就像在管理账号中描述的一样。如果你以个人身份加入开发者计划的话，你是单人Team的Team创建者。如果你以公司的身份假如开发者计划的话，你就是Team创建者，并且可以邀请其他人加入你的Team，就像在邀请Team成员里面描述的一样。你可以指定一个人为Team
 
 
 

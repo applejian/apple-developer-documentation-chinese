@@ -28,13 +28,13 @@ Do not use “do” or “does” as part of the name because these auxiliary ve
 *译者注：[ifeegoo](http://www.ifeegoo.com)，一直以来不是很喜欢Objective-C的Get方法的命名不带get。感觉不够明了。但是这个大家都习以为常。上面也说了，如果方法不是直接返回的，可以使用get，比如通过回调才能获取的属性。*
 
 |Method Naming|Commentary
-||
+|-----|-----
 |- (NSSize)cellSize;|Right.
 |- (NSSize)calcCellSize;|Wrong.
 |- (NSSize)getCellSize;|Wrong.
 
 |方法命名|评述
-||
+|-----|-----
 |- (NSSize)cellSize;|正确。
 |- (NSSize)calcCellSize;|错误。
 |- (NSSize)getCellSize;|错误。
@@ -43,12 +43,12 @@ Do not use “do” or “does” as part of the name because these auxiliary ve
 + 在所有参数前面使用关键词。
 
 |Method Naming|Commentary
-||
+|-----|-----
 |- (void)sendAction:(SEL)aSelector toObject:(id)anObject forAllCells:(BOOL)flag;|Right.
 |- (void)sendAction:(SEL)aSelector :(id)anObject :(BOOL)flag;|Wrong.
 
 |方法命名|评述
-||
+|-----|-----
 |- (void)sendAction:(SEL)aSelector toObject:(id)anObject forAllCells:(BOOL)flag;|正确。
 |- (void)sendAction:(SEL)aSelector :(id)anObject :(BOOL)flag;|错误。
 
@@ -56,13 +56,13 @@ Do not use “do” or “does” as part of the name because these auxiliary ve
 + 在参数之前描述这个参数。
 
 |Method Naming|Commentary
-||
+|-----|-----
 |- (id)viewWithTag:(NSInteger)aTag;|Right.
 |- (id)taggedView:(int)aTag;|Wrong.
 
 
 |方法命名|评述
-||
+|-----|-----
 |- (id)viewWithTag:(NSInteger)aTag;|正确。
 |- (id)taggedView:(int)aTag;|错误。
 
@@ -70,12 +70,12 @@ Do not use “do” or “does” as part of the name because these auxiliary ve
 + 当你想要创建一个比继承的方法更加明确的方法的时候，请在方法结束之后，添加一些关键词。
 
 |Method Naming|Commentary
-||
+|-----|-----
 |- (id)initWithFrame:(CGRect)frameRect;|NSView, UIView.
 |- (id)initWithFrame:(NSRect)frameRect mode:(int)aMode cellClass:(Class)factoryId numberOfRows:(int)rowsHigh numberOfColumns:(int)colsWide;|NSMatrix, a subclass of NSView
 
 |方法命名|评述
-||
+|-----|-----
 |- (id)initWithFrame:(CGRect)frameRect;|NSView, UIView.
 |- (id)initWithFrame:(NSRect)frameRect mode:(int)aMode cellClass:(Class)factoryId numberOfRows:(int)rowsHigh numberOfColumns:(int)colsWide;|NSMatrix, NSView的子类
 
@@ -83,12 +83,12 @@ Do not use “do” or “does” as part of the name because these auxiliary ve
 + 不要在描述属性的关键词上使用“and”。
 
 |Method Naming|Commentary
-||
+|-----|-----
 |- (int)runModalForDirectory:(NSString *)path file:(NSString *) name types:(NSArray *)fileTypes;|Right.
 |- (int)runModalForDirectory:(NSString *)path andFile:(NSString *)name andTypes:(NSArray *)fileTypes;|Wrong.
 
 |方法命名|评述
-||
+|-----|-----
 |- (int)runModalForDirectory:(NSString *)path file:(NSString *) name types:(NSArray *)fileTypes;|正确。
 |- (int)runModalForDirectory:(NSString *)path andFile:(NSString *)name andTypes:(NSArray *)fileTypes;|错误。
 
@@ -99,11 +99,11 @@ Although “and” may sound good in this example, it causes problems as you cre
 + 如果一个方法描述了两个单独的动作，可以使用“and”来连接他们。
 
 |Method Naming|Commentary
-||
+|-----|-----
 |- (BOOL)openFile:(NSString *)fullPath withApplication:(NSString *)appName andDeactivate:(BOOL)flag;|NSWorkspace.
 
 |方法命名|评述
-||
+|-----|-----
 |- (BOOL)openFile:(NSString *)fullPath withApplication:(NSString *)appName andDeactivate:(BOOL)flag;|NSWorkspace.
 
 ## Accessor Methods  
@@ -151,14 +151,14 @@ The verb should be in the simple present tense.
 + 不要通过分词形式将动词转换成形容词：
 
 |Method Naming|Commentary
-||
+|-----|-----
 |- (void)setAcceptsGlyphInfo:(BOOL)flag;|Right.
 |- (BOOL)acceptsGlyphInfo;|Right.  
 |- (void)setGlyphInfoAccepted:(BOOL)flag;|Wrong.
 |- (BOOL)glyphInfoAccepted;|Wrong.
 
 |方法命名|评述
-||
+|-----|-----
 |- (void)setAcceptsGlyphInfo:(BOOL)flag;|正确。
 |- (BOOL)acceptsGlyphInfo;|正确。
 |- (void)setGlyphInfoAccepted:(BOOL)flag;|错误。
@@ -168,7 +168,7 @@ The verb should be in the simple present tense.
 + 你可能会使用情态动词来阐述意思，但是不用使用“do” 或“does”。
 
 |Method Naming|Commentary
-||
+|-----|-----
 |- (void)setCanHide:(BOOL)flag;|Right.
 |- (BOOL)canHide;|Right.
 |- (void)setShouldCloseDocument:(BOOL)flag;|Right.
@@ -177,7 +177,7 @@ The verb should be in the simple present tense.
 |- (BOOL)doesAcceptGlyphInfo;|Wrong.
 
 |方法命名|评述
-||
+|-----|-----
 |- (void)setCanHide:(BOOL)flag;|正确。
 |- (BOOL)canHide;|正确。
 |- (void)setShouldCloseDocument:(BOOL)flag;|正确。
@@ -189,11 +189,11 @@ The verb should be in the simple present tense.
 + 仅当方法间接返回对象和值的时候，使用“get”命名。而且仅当对个条目需要返回的时候。
 
 |Method Naming|Commentary
-||
+|-----|-----
 |- (void)getLineDash:(float *)pattern count:(int *)count phase:(float *)phase;|NSBezierPath.
 
 |方法命名|评述
-||
+|-----|-----
 |- (void)getLineDash:(float *)pattern count:(int *)count phase:(float *)phase;|NSBezierPath.
 
 In methods such as these, the implementation should accept NULL for these in–out parameters as an indication that the caller is not interested in one or more of the returned values.  
@@ -334,37 +334,3 @@ Names of most private methods in the Cocoa frameworks have an underscore prefix 
 
 Although the advice to give private method names a prefix might seem to contradict the earlier claim that methods exist in the namespace of their class, the intent here is different: to prevent unintentional overriding of superclass private methods.  
 尽管给私有方法加上前缀的命名方式看起来像是与先前的提出的方法以类为区分的命名空间存在矛盾之处，但是这里的意图在于：防止无意识的重写了父类的私有方法。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -17,7 +17,7 @@ This guide contains everything you need to know to distribute an app through the
 +  验证你已经正确的准备好你的应用，并且提交到 Store。
 + 学习在提交应用之后如何发布和维护你的应用。
 
-![](https://raw.githubusercontent.com/ifeegoo/ifeegoo-developer-documentation-translation-chinese-ios/master/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/apple-app-enroll-develop-distribute-workflow.png "Apple App Enroll Develop Distribute Workflow")
+![](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/Art/1_administration_tasks_2x.png "Apple App Enroll Develop Distribute Workflow")
 
 
 You perform these tasks using Xcode features and several web tools available only to members of an Apple Developer Program. Before you use certain app services, such as iCloud and Game Center, you must join an Apple Developer Program. Join a program even if you distribute an application outside of the store so that customers know your application comes from a known source.  

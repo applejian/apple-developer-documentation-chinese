@@ -11,7 +11,7 @@ In general, you shouldn’t abbreviate names when you design your programmatic i
 + 你在参数名中可以更加自由的使用简写（例如：imageRep”, “col” (“column”的简写), “obj”, 和 “otherWin”）。
 
 |Abbreviation|Meaning and comments
-||
+|---|---
 |alloc|Allocate.
 |alt|Alternate.
 |app|Application. For example, NSApp the global application object. However, “application” is spelled out in delegate methods, notifications, and so on.
@@ -33,7 +33,7 @@ In general, you shouldn’t abbreviate names when you design your programmatic i
 |vert|Vertical.
 
 |缩写词|意思和评注
-||
+|---|---
 |alloc|Allocate. 分配。
 |alt|Alternate. 轮流的。
 |app|Application. 应用。例如，全局的应用对象NSApp。然而在代理方法、通知等地方，还是用全拼“application”。

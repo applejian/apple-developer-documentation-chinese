@@ -1,6 +1,4 @@
-# ios-developer-documentation-chinese
-
-## iOS开发文档的中文翻译版本！
+# iOS开发文档的中文翻译版本
 
 ### 目前正在进行或者已经完成的翻译部分：
 

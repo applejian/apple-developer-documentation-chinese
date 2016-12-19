@@ -14,9 +14,46 @@
 
 在蓝牙低功耗通信中，有两个核心成员，中心设备和外围设备。每一个成员都有不同的角色。外围设备通常有其他设备需要的数据。中心设备通常使用外围设备提供的信息来完成某些任务。例如配备蓝牙低功耗技术的温控计可以将房间中的温度信息提供给 iOS 应用，然后以一种用户友好的方式来显示。
 
+每一个成员都会执行不同的任务合集，外围设备通过广播它们的无线数据使它们可以被发现。中心设备扫描附近有它想要数据的外围设备。当中央发现这样的外围设备时，中心设备会请求连接到外围设备，并开始与外围设备的数据进行交互和探索。外围设备负责以适当的方式对中心设备进行响应。
+
+相关章节：[核心蓝牙概述]()
 
 
+### 核心蓝牙简化了普通的蓝牙任务
 
-Each player performs a different set of tasks when carrying out its role. Peripherals make their presence known by advertising the data they have over the air. Centrals scan for nearby peripherals that might have data they’re interested in. When a central discovers such a peripheral, the central requests to connect to the peripheral and begins exploring and interacting with the peripheral’s data. The peripheral is responsible for responding to the central in appropriate ways.
+核心蓝牙框架从蓝牙 4.0 规范中抽象出很多低级的细节。因此，您需要在应用程序中实现的许多常见的蓝牙低功耗任务都得以简化。如果您正在开发作为中心角色的应用程序，核心蓝牙可以让你的应用轻松地发现和连接外设，以及探索外设的数据并与其进行交互。此外，核心蓝牙还可以轻松地设置你的本地设备最为外设角色。
 
-Relevant Chapters: Core Bluetooth Overview
+相关章节：[执行公共中心角色任务，执行公共外围角色任务]()
+
+
+### iOS 应用程序状态影响蓝牙行为
+当您的 iOS 应用处于后台或处于暂停状态时，与其蓝牙相关的功能会受到影响。默认情况下，您的应用程序无法在后台或处于暂停状态下执行蓝牙低功耗任务。也就是说如果您的应用程序需要在后台执行蓝牙低功耗任务，您可以声明它支持一种或两种核心蓝牙后台执行模式（一个用于中心角色，一个用于外围角色）。即使您声明了这一个或两个后台执行模式，当您的应用处于后台时某些蓝牙任务仍会有不同的操作。您该在设计应用程式时考虑这些差异。
+
+甚至支持后台处理的应用程序都可能在任何时间被系统终止为当前前台应用程序释放内存。因此从 iOS 7 开始，核心蓝牙支持保存中央和外设管理器对象的状态信息，并在应用启动时恢复状态。您可以使用此功能来支持涉及长期操作的蓝牙设备。
+
+相关章节：[核心蓝牙为 iOS 应用程序的后台处理]()
+
+
+### 遵循最佳实践来增强用户体验
+核心蓝牙框架使您的应用程序可以控制许多常见的蓝牙低能耗处理。应遵循最佳实践，以负责任务的方式利用此级别的控制，并增强用户的体验。
+
+例如，在实现中央或外设角色时执行的许多任务都使用蓝牙设备的板载无线电无线传输信号时。由于您的设备的无线电广播与其他形式的无线通信共享，且使用无线电对设备的电池寿命有不利影响，因此设计您的应用时，应始终最大限度地减少使用无线电的频率。
+
+相关章节：[与远程外围设备交互的最佳实践，将本地设备设置为外设的最佳实践]()
+
+
+## 如何使用本文档
+
+
+如果您从未使用过核心蓝牙框架，或者您不熟悉基本的蓝牙低功耗概念，请阅读本文的全部内容。在[核心蓝牙概述]()中，您可以了解本书其余部分需要了解的关键术语和概念。
+
+在您了解了关键概念后，请阅读[执行常见的中心角色任务]()来了解如何开发应用程序以在本地设备上实现中心角色。同样，要了解如何开发应用程序以在本地设备上实现外设角色，请阅读[执行常见的外围角色任务]()。
+
+为了确保您的应用程序性能良好并遵守最佳实践，请阅读后面的章节：[核心蓝牙为 iOS 应用程序的后台处理]()，[与远程外围设备交互的最佳实践]()和[将本地设备设置为外设的最佳实践]()。
+
+
+## 参考
+
+官方[蓝牙特别兴趣小组（SIG）网站](https://www.bluetooth.com)提供有关蓝牙低功耗无线技术的明确信息。 在那里，你也可以找到[蓝牙 4.0 规范](https://www.bluetooth.com/specifications/adopted-specifications)。
+
+如果您正在设计使用蓝牙低功耗技术与包括 Mac，iPhone，iPad 和 iPod touch 型号的 Apple 产品通信的硬件配件，请阅读[ Apple 产品的蓝牙配件设计指南](https://developer.apple.com/hardwaredrivers/BluetoothDesignGuidelines.pdf)。 如果您的蓝牙配件（通过蓝牙低功耗链接连接的 iOS 设备）需要访问在 iOS 设备上生成的通知，请阅读[ Apple 通知中心服务（ANCS）规范](https://developer.apple.com/library/content/documentation/CoreBluetooth/Reference/AppleNotificationCenterServiceSpecification/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013460)。

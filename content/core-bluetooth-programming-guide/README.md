@@ -57,3 +57,19 @@
 官方[蓝牙特别兴趣小组（SIG）网站](https://www.bluetooth.com)提供有关蓝牙低功耗无线技术的明确信息。 在那里，你也可以找到[蓝牙 4.0 规范](https://www.bluetooth.com/specifications/adopted-specifications)。
 
 如果您正在设计使用蓝牙低功耗技术与包括 Mac，iPhone，iPad 和 iPod touch 型号的 Apple 产品通信的硬件配件，请阅读[ Apple 产品的蓝牙配件设计指南](https://developer.apple.com/hardwaredrivers/BluetoothDesignGuidelines.pdf)。 如果您的蓝牙配件（通过蓝牙低功耗链接连接的 iOS 设备）需要访问在 iOS 设备上生成的通知，请阅读[ Apple 通知中心服务（ANCS）规范](https://developer.apple.com/library/content/documentation/CoreBluetooth/Reference/AppleNotificationCenterServiceSpecification/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013460)。
+
+
+
+# 核心蓝牙概述
+
+
+核心蓝牙框架允许您的 iOS 和 Mac 应用程序与低功耗蓝牙设备通信。例如，您的应用程序可以发现、探索低功耗外设并与其交互，如心率监视器、数字恒温器，设置其他的 iOS 设备。
+
+该框架是用于低功耗设备的蓝牙 4.0 规范的抽象。也就是说，它对开大人员隐藏了规范许多底层的细节，使您更容易开发与蓝牙低功耗设备交互的应用程序。因为该框架是基于蓝牙 4.0 规范的，所以已经采用了的一些来自规范的概念和术语。本章向您介绍使用核心蓝牙框架开发优秀应用程序需要了解的关键术语和概念。
+
+>重要提示：iOS 10.0 及以上相关的 iOS 应用程序必须在其 Info.plist 文件包含它需要访问的数据类型使用说明键，否则程序会崩溃。具体到要访问蓝牙外设数据，它必须包含 NSBluetoothPeripheralUsageDescription 。
+
+
+
+
+

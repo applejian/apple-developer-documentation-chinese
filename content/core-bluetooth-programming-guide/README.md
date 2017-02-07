@@ -14,9 +14,101 @@
 
 在蓝牙低功耗通信中，有两个核心成员，中心设备和外围设备。每一个成员都有不同的角色。外围设备通常有其他设备需要的数据。中心设备通常使用外围设备提供的信息来完成某些任务。例如配备蓝牙低功耗技术的温控计可以将房间中的温度信息提供给 iOS 应用，然后以一种用户友好的方式来显示。
 
+每一个成员都会执行不同的任务合集，外围设备通过广播它们的无线数据使它们可以被发现。中心设备扫描附近有它想要数据的外围设备。当中央发现这样的外围设备时，中心设备会请求连接到外围设备，并开始与外围设备的数据进行交互和探索。外围设备负责以适当的方式对中心设备进行响应。
+
+相关章节：[核心蓝牙概述]()
+
+
+### 核心蓝牙简化了普通的蓝牙任务
+
+核心蓝牙框架从蓝牙 4.0 规范中抽象出很多低级的细节。因此，您需要在应用程序中实现的许多常见的蓝牙低功耗任务都得以简化。如果您正在开发作为中心角色的应用程序，核心蓝牙可以让你的应用轻松地发现和连接外设，以及探索外设的数据并与其进行交互。此外，核心蓝牙还可以轻松地设置你的本地设备最为外设角色。
+
+相关章节：[执行公共中心角色任务，执行公共外围角色任务]()
+
+
+### iOS 应用程序状态影响蓝牙行为
+当您的 iOS 应用处于后台或处于暂停状态时，与其蓝牙相关的功能会受到影响。默认情况下，您的应用程序无法在后台或处于暂停状态下执行蓝牙低功耗任务。也就是说如果您的应用程序需要在后台执行蓝牙低功耗任务，您可以声明它支持一种或两种核心蓝牙后台执行模式（一个用于中心角色，一个用于外围角色）。即使您声明了这一个或两个后台执行模式，当您的应用处于后台时某些蓝牙任务仍会有不同的操作。您该在设计应用程式时考虑这些差异。
+
+甚至支持后台处理的应用程序都可能在任何时间被系统终止为当前前台应用程序释放内存。因此从 iOS 7 开始，核心蓝牙支持保存中央和外设管理器对象的状态信息，并在应用启动时恢复状态。您可以使用此功能来支持涉及长期操作的蓝牙设备。
+
+相关章节：[核心蓝牙为 iOS 应用程序的后台处理]()
+
+
+### 遵循最佳实践来增强用户体验
+核心蓝牙框架使您的应用程序可以控制许多常见的蓝牙低能耗处理。应遵循最佳实践，以负责任务的方式利用此级别的控制，并增强用户的体验。
+
+例如，在实现中央或外设角色时执行的许多任务都使用蓝牙设备的板载无线电无线传输信号时。由于您的设备的无线电广播与其他形式的无线通信共享，且使用无线电对设备的电池寿命有不利影响，因此设计您的应用时，应始终最大限度地减少使用无线电的频率。
+
+相关章节：[与远程外围设备交互的最佳实践，将本地设备设置为外设的最佳实践]()
+
+
+## 如何使用本文档
+
+
+如果您从未使用过核心蓝牙框架，或者您不熟悉基本的蓝牙低功耗概念，请阅读本文的全部内容。在[核心蓝牙概述]()中，您可以了解本书其余部分需要了解的关键术语和概念。
+
+在您了解了关键概念后，请阅读[执行常见的中心角色任务]()来了解如何开发应用程序以在本地设备上实现中心角色。同样，要了解如何开发应用程序以在本地设备上实现外设角色，请阅读[执行常见的外围角色任务]()。
+
+为了确保您的应用程序性能良好并遵守最佳实践，请阅读后面的章节：[核心蓝牙为 iOS 应用程序的后台处理]()，[与远程外围设备交互的最佳实践]()和[将本地设备设置为外设的最佳实践]()。
+
+
+## 参考
+
+官方[蓝牙特别兴趣小组（SIG）网站](https://www.bluetooth.com)提供有关蓝牙低功耗无线技术的明确信息。 在那里，你也可以找到[蓝牙 4.0 规范](https://www.bluetooth.com/specifications/adopted-specifications)。
+
+如果您正在设计使用蓝牙低功耗技术与包括 Mac，iPhone，iPad 和 iPod touch 型号的 Apple 产品通信的硬件配件，请阅读[ Apple 产品的蓝牙配件设计指南](https://developer.apple.com/hardwaredrivers/BluetoothDesignGuidelines.pdf)。 如果您的蓝牙配件（通过蓝牙低功耗链接连接的 iOS 设备）需要访问在 iOS 设备上生成的通知，请阅读[ Apple 通知中心服务（ANCS）规范](https://developer.apple.com/library/content/documentation/CoreBluetooth/Reference/AppleNotificationCenterServiceSpecification/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013460)。
 
 
 
-Each player performs a different set of tasks when carrying out its role. Peripherals make their presence known by advertising the data they have over the air. Centrals scan for nearby peripherals that might have data they’re interested in. When a central discovers such a peripheral, the central requests to connect to the peripheral and begins exploring and interacting with the peripheral’s data. The peripheral is responsible for responding to the central in appropriate ways.
+# 核心蓝牙概述
 
-Relevant Chapters: Core Bluetooth Overview
+
+核心蓝牙框架允许您的 iOS 和 Mac 应用程序与低功耗蓝牙设备通信。例如，您的应用程序可以发现、探索低功耗外设并与其交互，如心率监视器、数字恒温器，设置其他的 iOS 设备。
+
+该框架是用于低功耗设备的蓝牙 4.0 规范的抽象。也就是说，它对开大人员隐藏了规范许多底层的细节，使您更容易开发与蓝牙低功耗设备交互的应用程序。因为该框架是基于蓝牙 4.0 规范的，所以已经采用了的一些来自规范的概念和术语。本章向您介绍使用核心蓝牙框架开发优秀应用程序需要了解的关键术语和概念。
+
+>重要提示：iOS 10.0 及以上相关的 iOS 应用程序必须在其 Info.plist 文件包含它需要访问的数据类型使用说明键，否则程序会崩溃。具体到要访问蓝牙外设数据，它必须包含 NSBluetoothPeripheralUsageDescription 。
+
+
+## 中央和外围设备及其在蓝牙通信中的作用
+
+
+有两个参与者参与所有的蓝牙低功耗通讯：中央和外围。基于某种传统的客户端-服务器架构，外围设备通常具有其他设备所需要的数据。中心通常使用由外围设备提供的信息来完成某种特定的任务。例如，如图 1-1 所示，心率监测器可能具有有用的数据，您的 Mac 或 iOS 应用可能需要它来以更友好的方式显示用户的心率。
+
+**图 1-1** 中央和外围设备
+
+![](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/Art/CBDevices1_2x.png)
+
+
+### 中央发现并连接到正在广告的外围设备
+
+外围设备以广告包的形式广播它们具有的一些数据。广告包是相对较小的数据束，它包含外围设备必须提供的有用信息，如外围设备的名字和主要功能。例如数字恒温器可以提供它所在房间当前的温度。在低功耗蓝牙中，广告是外围设备使其被发现存在的主要方式。
+
+另一方面，中心可以扫面并监听任何正在广告其需要信息的外围设备，如图 1-2 所示，中央可以请求连接到它发现的正在广告的任何外围设备。
+
+**图 1-2** 广告和发现
+
+![](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/Art/AdvertisingAndDiscovery_2x.png)
+
+
+### 外设的数据如何被结构化
+
+连接到外设的目的是对其提供的数据进行探索与交互。但是，在您实现这一点之前，这有助于您了解外设的数据如何被结构化。
+
+外设可以包含一个或多个服务或提供关于其连接信号强度的有用信息。服务适用于实现设备（或该设备的部分）的功能或特征的数据和相关联的行为的合集。例如，心率监视器的一个服务可以从监视器的心率传感器暴露心率数据。
+
+服务本身由特性或包含的服务（即对其服务的引用）组成。特性提供有关外设的进一步详细信息。例如，刚刚提到的心率服务可以包含一个用来描述心率传感器的预期身体位置的特性和另一个用来传送心率测量数据的特性。图 1-3 显示出了心率检测器的服务和特性的一种可能结构。
+
+**图 1-3** 外设的服务和特性
+
+![](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/Art/CBPeripheralData_Example_2x.png)
+
+
+### 中心对外设上的数据进行探索和交互
+在中心设备成功建立连接到外围设备后，它可以发现外围设备提供的全部服务和特性。（广告数据可能仅包含可用服务的一部分）
+
+中心还可以通过读取或写入服务特性的值来与外设的服务进行交互。例如，您的应用可以从数字恒温器请求当前房间的温度，或者也可以为数字恒温器提供要设置的房间温度值。
+
+
+
+

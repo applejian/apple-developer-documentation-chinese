@@ -15,9 +15,9 @@ https://apple.developerdocumentation.cn
 
 [iOS Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/)
 
-[Overview - Design Principles](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/)
-[Overview - What's New in iOS 10](https://developer.apple.com/ios/human-interface-guidelines/overview/whats-new/)
-[Overview - Interface Essentials](https://developer.apple.com/ios/human-interface-guidelines/overview/interface-essentials/)
-[Interaction - 3D Touch](https://developer.apple.com/ios/human-interface-guidelines/interaction/3d-touch/)
-[Interaction - Accessibility](https://developer.apple.com/ios/human-interface-guidelines/interaction/accessibility/)
+[Overview - Design Principles](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/)  
+[Overview - What's New in iOS 10](https://developer.apple.com/ios/human-interface-guidelines/overview/whats-new/)  
+[Overview - Interface Essentials](https://developer.apple.com/ios/human-interface-guidelines/overview/interface-essentials/)  
+[Interaction - 3D Touch](https://developer.apple.com/ios/human-interface-guidelines/interaction/3d-touch/)  
+[Interaction - Accessibility](https://developer.apple.com/ios/human-interface-guidelines/interaction/accessibility/)  
 [Interaction - Audio](https://developer.apple.com/ios/human-interface-guidelines/interaction/audio/)

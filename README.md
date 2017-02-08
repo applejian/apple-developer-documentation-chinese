@@ -10,3 +10,7 @@ https://apple.developerdocumentation.cn
 #### 目前成员
 
 [fiskz](https://github.com/fiskz)/[subvin](https://github.com/subvin)/[luyonghe](https://github.com/luyonghe)/[ifeegoo](https://github.com/ifeegoo)/[lewanny](https://github.com/lewanny)/[arrfu](https://github.com/arrfu)
+
+#### 翻译计划
+
+https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/

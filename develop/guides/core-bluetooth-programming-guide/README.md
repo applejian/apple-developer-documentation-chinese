@@ -14,6 +14,7 @@
 
 在蓝牙低功耗通信中，有两个核心成员，中心设备和外围设备。每一个成员都有不同的角色。外围设备通常有其他设备需要的数据。中心设备通常使用外围设备提供的信息来完成某些任务。例如配备蓝牙低功耗技术的温控计可以将房间中的温度信息提供给 iOS 应用，然后以一种用户友好的方式来显示。
 
+每一个成员在执行自己的角色的时候会执行一套不同的任务。
 
 Each player performs a different set of tasks when carrying out its role. Peripherals make their presence known by advertising the data they have over the air. Centrals scan for nearby peripherals that might have data they’re interested in. When a central discovers such a peripheral, the central requests to connect to the peripheral and begins exploring and interacting with the peripheral’s data. The peripheral is responsible for responding to the central in appropriate ways.
 

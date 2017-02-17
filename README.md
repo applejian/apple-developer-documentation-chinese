@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# iOS 开发文档中文版本
-
-内容预览：https://ios.developerdocumentation.cn
-=======
 # Apple 开发文档中文版本
 
 #### 开发文档预览
@@ -26,4 +21,3 @@ https://apple.developerdocumentation.cn
 [Interaction - 3D Touch](https://developer.apple.com/ios/human-interface-guidelines/interaction/3d-touch/) luyonghe  
 [Interaction - Accessibility](https://developer.apple.com/ios/human-interface-guidelines/interaction/accessibility/) subvin  
 [Interaction - Audio](https://developer.apple.com/ios/human-interface-guidelines/interaction/audio/) arrfu
->>>>>>> e00863af5191dcd6d05f0ae692d753222a59b2ca

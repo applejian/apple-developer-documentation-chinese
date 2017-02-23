@@ -7,5 +7,5 @@
        * [接口要素](design/ios/human-interface-guidelines/overview/interface-essentials.md)
    * [交互](design/ios/human-interface-guidelines/interaction/README.md)
        * [3D Touch](design/ios/human-interface-guidelines/interaction/3d-touch.md)
-       * [触手可得](design/ios/human-interface-guidelines/interaction/accessibility.md)
+       * [辅助功能](design/ios/human-interface-guidelines/interaction/accessibility.md)
        * [音频](design/ios/human-interface-guidelines/interaction/audio.md)

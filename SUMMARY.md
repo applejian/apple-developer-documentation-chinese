@@ -10,7 +10,7 @@
        * [辅助功能](design/ios/human-interface-guidelines/interaction/accessibility.md)
        * [音频](design/ios/human-interface-guidelines/interaction/audio.md)
        * [身份验证](design/ios/human-interface-guidelines/interaction/authentication.md)
-       * [数据入口](design/ios/human-interface-guidelines/interaction/data-entry.md)
+       * [数据输入](design/ios/human-interface-guidelines/interaction/data-entry.md)
        * [反馈](design/ios/human-interface-guidelines/interaction/feedback.md)
        * [文件处理](design/ios/human-interface-guidelines/interaction/file-handling.md)
        * [初次启动体验](design/ios/human-interface-guidelines/interaction/first-launch-experience.md)

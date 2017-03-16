@@ -16,3 +16,5 @@
 
 **在适当的时候和其他应用分享文件**。如果它是必要的，您的应用程序可以通过 [文档提供商扩展](https://developer.apple.com/ios/human-interface-guidelines/extensions/document-providers/) 与其他应用程序共享其文件。你的应用同样可以打开浏览和打开别的应用的文件。更多的实现细节，请查看[Document Picker Programming Guide](https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/DocumentPickerProgrammingGuide/Introduction/Introduction.html)。
 
+
+

@@ -14,6 +14,7 @@
        * [交互 - 文件处理](design/ios/human-interface-guidelines/interaction/file-handling.md)
        * [交互 - 初次启动体验](design/ios/human-interface-guidelines/interaction/first-launch-experience.md)
        * [交互 - 手势](design/ios/human-interface-guidelines/interaction/gestures.md)
+       * [图像 - 应用图标](design/ios/human-interface-guidelines/graphics/app-icons.md)
 * [Apple 官方开发指南]()
    * [App 发布指南]()
        * [待完善]()

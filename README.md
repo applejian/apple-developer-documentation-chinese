@@ -15,12 +15,12 @@ https://apple.developerdocumentation.cn
 
 #### No.3
 
-[Interaction - Loading](https://developer.apple.com/ios/human-interface-guidelines/interaction/loading/)  
-[Interaction - Modality](https://developer.apple.com/ios/human-interface-guidelines/interaction/modality/)  
-[Interaction - Navigation](https://developer.apple.com/ios/human-interface-guidelines/interaction/navigation/)  
-[Interaction - Ratings and Reviews](https://developer.apple.com/ios/human-interface-guidelines/interaction/ratings-and-reviews/)  
-[Interaction - Requesting Permission](https://developer.apple.com/ios/human-interface-guidelines/interaction/requesting-permission/)  
-[Interaction - Settings](https://developer.apple.com/ios/human-interface-guidelines/interaction/settings/)
+[Interaction - Loading](https://developer.apple.com/ios/human-interface-guidelines/interaction/loading/) arrfu  
+[Interaction - Modality](https://developer.apple.com/ios/human-interface-guidelines/interaction/modality/) lewanny   
+[Interaction - Navigation](https://developer.apple.com/ios/human-interface-guidelines/interaction/navigation/)  subvin  
+[Interaction - Ratings and Reviews](https://developer.apple.com/ios/human-interface-guidelines/interaction/ratings-and-reviews/) ifeegoo  
+[Interaction - Requesting Permission](https://developer.apple.com/ios/human-interface-guidelines/interaction/requesting-permission/) fiskz  
+[Interaction - Settings](https://developer.apple.com/ios/human-interface-guidelines/interaction/settings/) luyonghe
 
 
 

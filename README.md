@@ -13,6 +13,17 @@ https://apple.developerdocumentation.cn
 
 #### 翻译计划
 
+#### No.3
+
+[Interaction - Loading](https://developer.apple.com/ios/human-interface-guidelines/interaction/loading/) arrfu  
+[Interaction - Modality](https://developer.apple.com/ios/human-interface-guidelines/interaction/modality/) lewanny   
+[Interaction - Navigation](https://developer.apple.com/ios/human-interface-guidelines/interaction/navigation/)  subvin  
+[Interaction - Ratings and Reviews](https://developer.apple.com/ios/human-interface-guidelines/interaction/ratings-and-reviews/) ifeegoo  
+[Interaction - Requesting Permission](https://developer.apple.com/ios/human-interface-guidelines/interaction/requesting-permission/) fiskz  
+[Interaction - Settings](https://developer.apple.com/ios/human-interface-guidelines/interaction/settings/) luyonghe
+
+
+
 #### No.2
 
 [Interaction - Authentication](https://developer.apple.com/ios/human-interface-guidelines/interaction/authentication/) lewanny  
@@ -33,9 +44,4 @@ https://apple.developerdocumentation.cn
 [Interaction - Accessibility](https://developer.apple.com/ios/human-interface-guidelines/interaction/accessibility/) subvin  
 [Interaction - Audio](https://developer.apple.com/ios/human-interface-guidelines/interaction/audio/) arrfu
 
-
-
-
-
-
-ifeegoo 测试
+:smile:

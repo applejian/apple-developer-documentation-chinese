@@ -13,6 +13,14 @@ https://apple.developerdocumentation.cn
 
 #### 翻译计划
 
+#### No.4
+
+[Interaction - Terminology](https://developer.apple.com/ios/human-interface-guidelines/interaction/terminology/) lewanny  
+[Interaction - Undo and Redo](https://developer.apple.com/ios/human-interface-guidelines/interaction/undo-and-redo/) luyonghe   
+[Interaction - Multitasking](https://developer.apple.com/ios/human-interface-guidelines/features/multitasking/)  subvin  
+[Interaction - Notifications](https://developer.apple.com/ios/human-interface-guidelines/features/notifications/) ifeegoo  
+
+
 #### No.3
 
 [Interaction - Loading](https://developer.apple.com/ios/human-interface-guidelines/interaction/loading/) arrfu  

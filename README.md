@@ -16,7 +16,7 @@ https://apple.developerdocumentation.cn
 #### No.4
 
 [Interaction - Terminology](https://developer.apple.com/ios/human-interface-guidelines/interaction/terminology/) lewanny  
-[Interaction - Undo and Redo](https://developer.apple.com/ios/human-interface-guidelines/interaction/undo-and-redo/) luyonghe   
+[Interaction - Undo and Redo](https://developer.apple.com/ios/human-interface-guidelines/interaction/undo-and-redo/) luyonghe  
 [Interaction - Multitasking](https://developer.apple.com/ios/human-interface-guidelines/features/multitasking/)  subvin  
 [Interaction - Notifications](https://developer.apple.com/ios/human-interface-guidelines/features/notifications/) ifeegoo  
 

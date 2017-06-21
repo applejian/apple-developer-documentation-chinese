@@ -17,3 +17,4 @@
 **只在当前情境中执行撤销和重做操作。** 撤消和重做应该对当前的情境有明确的立竿见影的效果，而不是早期的。
 
 有关开发人员的指导，请参阅[撤消架构](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/UndoArchitecture/UndoArchitecture.html)。
+

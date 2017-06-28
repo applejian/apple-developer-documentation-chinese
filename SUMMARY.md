@@ -24,6 +24,7 @@
        * [交互 - 撤销与重做](design/ios/human-interface-guidelines/interaction/undo-and-redo.md)
        * [系统功能 - 多任务](design/ios/human-interface-guidelines/features/multitasking.md)
        * [系统功能 - 通知](design/ios/human-interface-guidelines/features/notifications.md)
+       * [系统功能 - 打印](design/ios/human-interface-guidelines/features/printing.md)
        * [图像 - 应用图标](design/ios/human-interface-guidelines/graphics/app-icons.md)
 * [Apple 官方开发指南]()
    * [App 发布指南]()

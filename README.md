@@ -21,6 +21,7 @@ https://apple.developerdocumentation.cn
 [System Capabilities - TV Providers](https://developer.apple.com/ios/human-interface-guidelines/features/tvproviders/) ifeegoo  
 [Visual Design - Animation](https://developer.apple.com/ios/human-interface-guidelines/visual-design/animation/)  subvin  
 [Visual Design - Branding](https://developer.apple.com/ios/human-interface-guidelines/visual-design/branding/)  fiskz  
+[Visual Design - Color](https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/)  oulaija  
 
 
 

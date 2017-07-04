@@ -2,7 +2,7 @@
 颜色是传授活力的一种伟大的方式，提供视觉上的连续性，传达状态信息，根据用户行为给出反馈，在并帮助人们可视化数据。在浅色和深色的两个背景下，当你选择应用色彩的颜色搭配时，看看系统颜色组合的搭配。
 
 
-![](http://a3.qpic.cn/psb?/V10B7G9i0mXVOm/xB.bg1XmE2NKhzWQTEozNSQkUFkVDlE8sLo1EJC7ph4!/b/dIMAAAAAAAAA&bo=CAYKAQAAAAARBzU!&rf=viewer_4)
+![](color-backgrounds.jpg)
   
 <br> 
 **明智的使用颜色来交流.**颜色的力量唤起重要信息的注意，要更加谨慎的使用。例如，一个红色三角形警告人们一个危险问题变成不那么有效，原因是在应用程序别的地方使用了红色。
@@ -17,7 +17,7 @@
 **考虑选择一个关键的颜色来指示你整个应用程序的交互性.**在便笺中，交互性的元素是黄色，在日历中，交互性的元素是红色，如果你要规定交互性的关键颜色，请确保其他颜色不与之竞争。
 
 <br>                                       
-![](http://a3.qpic.cn/psb?/V10B7G9i0mXVOm/tUAxOW2xPh5G7CEi.yP0iLh9SHmegmaiHz0VYkaQI0I!/b/dGoBAAAAAAAA&bo=gAKNAgAAAAADBy8!&rf=viewer_4)        
+![](color_activeInactive.png)        
 
 <br>
 **避开使用相同的颜色做为交互式的和不交互式的元素.**如果交互式和不交互式的元素是同一个颜色，人们很难知道从哪里点击。
@@ -27,11 +27,11 @@
 
 <br>
 浅色搭配 
-![](http://a3.qpic.cn/psb?/V10B7G9i0mXVOm/x78kjXnhvMRpCLpkUy65v03oQP8SnB6vkVaQGvhYRqQ!/b/dGoBAAAAAAAA&bo=gAKPBAAAAAADBys!&rf=viewer_4)
+![](color_translucency_light.png)
 
 <br>
 深色搭配
-![](http://a1.qpic.cn/psb?/V10B7G9i0mXVOm/7nBcjIq*40J*GtM1fOnooxgpSctkIFGXyMpLlvfEFlg!/b/dGsBAAAAAAAA&bo=gALTBAAAAAADB3c!&rf=viewer_4)
+![](color_translucency_dark.png)
 
 <br>
 **测试你的应用程序的颜色在各种的照明条件下的色彩搭配.**照明在室内和室户两都有着明显的不同，根据空间氛围，时间，天气等，当你的应用程序在现实中使用时，你在计算机上看到的颜色总是不一样。总是在多种照明条件下预览你的应用程序，包括阳光充足的室外,看颜色如何显现，如果必要，请调整颜色，以便在大多数的案例中提供最好的观看体验。

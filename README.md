@@ -13,6 +13,19 @@ https://apple.developerdocumentation.cn
 
 #### 翻译计划
 
+#### No.5
+
+[System Capabilities - printing](https://developer.apple.com/ios/human-interface-guidelines/features/printing/) ifeegoo  
+[System Capabilities - Quick Look](https://developer.apple.com/ios/human-interface-guidelines/features/quick-look/) lewanny  
+[System Capabilities - Siri](https://developer.apple.com/ios/human-interface-guidelines/features/siri/) luyonghe  
+[System Capabilities - TV Providers](https://developer.apple.com/ios/human-interface-guidelines/features/tvproviders/) ifeegoo  
+[Visual Design - Animation](https://developer.apple.com/ios/human-interface-guidelines/visual-design/animation/)  subvin  
+[Visual Design - Branding](https://developer.apple.com/ios/human-interface-guidelines/visual-design/branding/)  fiskz  
+[Visual Design - Color](https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/)  oulaija  
+
+
+
+
 #### No.4
 
 [Interaction - Terminology](https://developer.apple.com/ios/human-interface-guidelines/interaction/terminology/) lewanny  

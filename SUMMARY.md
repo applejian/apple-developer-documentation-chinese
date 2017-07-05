@@ -30,6 +30,7 @@
        * [系统功能 - TV 供应商](design/ios/human-interface-guidelines/features/tv-providers.md)
        * [可视化设计 - 动画](design/ios/human-interface-guidelines/visual-design/animation.md)
        * [可视化设计 - 品牌化](design/ios/human-interface-guidelines/visual-design/branding.md)
+       * [可视化设计 - 颜色](design/ios/human-interface-guidelines/visual-design/color.md)
        * [图像 - 应用图标](design/ios/human-interface-guidelines/graphics/app-icons.md)
 * [Apple 官方开发指南]()
    * [App 发布指南]()

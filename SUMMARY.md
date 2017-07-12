@@ -31,6 +31,7 @@
        * [可视化设计 - 动画](design/ios/human-interface-guidelines/visual-design/animation.md)
        * [可视化设计 - 品牌化](design/ios/human-interface-guidelines/visual-design/branding.md)
        * [可视化设计 - 颜色](design/ios/human-interface-guidelines/visual-design/color.md)
+       * [可视化设计 - 布局](design/ios/human-interface-guidelines/visual-design/layout.md)
        * [图像 - 应用图标](design/ios/human-interface-guidelines/graphics/app-icons.md)
 * [Apple 官方开发指南]()
    * [App 发布指南]()

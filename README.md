@@ -1,5 +1,8 @@
 # 苹果开发文档·中文版
 
+
+<img src="logo-developer-documentation-apple.png" width="" height="200"/>
+
 #### 开发文档预览
 
 https://apple.developerdocumentation.cn
@@ -12,6 +15,13 @@ https://apple.developerdocumentation.cn
 [fiskz](https://github.com/fiskz)/[subvin](https://github.com/subvin)/[luyonghe](https://github.com/luyonghe)/[ifeegoo](https://github.com/ifeegoo)/[lewanny](https://github.com/lewanny)/[arrfu](https://github.com/arrfu)
 
 #### 翻译计划
+
+https://developer.apple.com/library/content/navigation/
+
+#### No.6
+
+[Apple File System Guide](https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/APFS_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40016999) fiskz  
+[Quartz Composer User Guide](https://developer.apple.com/library/content/documentation/GraphicsImaging/Conceptual/QuartzComposerUserGuide/qc_intro/qc_intro.html) ifeegoo
 
 #### No.5
 

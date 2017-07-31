@@ -39,11 +39,3 @@
 
 <br>
 有关适应性的开发人员指导，请参阅[自动布局指南](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/index.html)。
-
-
-
-
-
-
-
-

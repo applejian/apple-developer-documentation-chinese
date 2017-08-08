@@ -18,6 +18,11 @@ https://apple.developerdocumentation.cn
 
 https://developer.apple.com/library/content/navigation/
 
+
+#### No.7
+
+[App Distribution Guide](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html) ifeegoo & luyonghe & subvin & lewanny & fiskz
+
 #### No.6
 
 [Apple File System Guide](https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/APFS_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40016999) fiskz  
